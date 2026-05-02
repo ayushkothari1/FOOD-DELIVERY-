@@ -26,10 +26,11 @@
 
         <!-- DESKTOP MENU -->
         <ul class="navlist flex gap-3">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#home-section">Home</a></li>
+
+          <li><a href="#service-section">Services</a></li>
+          <li><a href="#about-section">About us</a></li>
+          <li><a href="#contact-section">Contacts</a></li>
           <!-- <li><a href="#">Home</a></li> -->
         </ul>
         <div class="desktop-action flex gap-2">
@@ -41,16 +42,18 @@
             Sign in &nbsp;
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
           </a>
-          <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+          <a href="#" class="hamburger"
+            ><i class="fa-solid cross fa-bars"></i
+          ></a>
         </div>
 
         <!-- MOBILE MENU -->
         <ul class="mobile-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#home-section">Home</a></li>
+
+          <li><a href="#service-section">Services</a></li>
+          <li><a href="#about-section">About us</a></li>
+          <li><a href="#contact-section">Contacts</a></li>
           <!-- <li><a href="#">Home</a></li> -->
           <li>
             <a href="#" class="btn">
@@ -64,7 +67,7 @@
 
     <!-- Sections Part -->
     <main>
-      <section>
+      <section id="home-section">
         <div class="hero-section flex wrapper gap-4">
           <div class="content">
             <h1>Enjoy Your Delicious <span>Food</span></h1>
@@ -95,7 +98,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="service-section">
         <div class="p-top wrapper">
           <div class="text-center">
             <h5>Our Services</h5>
@@ -184,7 +187,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="about-section">
         <div class="wrapper p-top flex gap-3">
           <div class="image-container">
             <img src="images/delivery-boy-with-phone.png" alt="" />
@@ -321,7 +324,7 @@
 
     <!-- footer part -->
 
-    <footer>
+    <footer id="contact-section">
       <div class="footer-container">
         <div class="flex wrapper gap-4">
           <div class="footer-wrapper">
@@ -397,8 +400,7 @@
       </div>
     </footer>
 
-    <script defer src="main.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="main.js"></script>
   </body>
 </html>
