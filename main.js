@@ -23,7 +23,7 @@ cartIcon.addEventListener("click", () => {
 });
 
 closeBtn.addEventListener("click", () =>
-  cartTab.classList.remove("cart-tab-asctive"),
+  cartTab.classList.remove("cart-tab-active"),
 );
 hamburger.addEventListener("click", () => {
   mobileMenu.classList.toggle("mobile-menu-active");
