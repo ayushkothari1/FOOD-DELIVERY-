@@ -16,6 +16,12 @@ const cartValue = document.querySelector(".cart-value");
 const hamburger = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(".mobile-menu");
 const bars = document.querySelector(".fa-bars");
+const siteHeader = document.querySelector("header");
+
+// ── Sticky navbar glass effect on scroll ──
+window.addEventListener("scroll", () => {
+  siteHeader.classList.toggle("scrolled", window.scrollY > 60);
+}, { passive: true });
 
 cartIcon.addEventListener("click", () => {
   cartTab.classList.add("cart-tab-active");

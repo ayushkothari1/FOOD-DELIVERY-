@@ -91,8 +91,30 @@ img {
 
 /* HEADER STYLING */
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--eye-ball);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+header.scrolled {
+  background: rgba(255, 253, 247, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
 .navbar {
   min-height: 14vh;
+}
+
+/* Push page content below fixed header */
+body {
+  padding-top: 14vh;
 }
 
 .logo {
